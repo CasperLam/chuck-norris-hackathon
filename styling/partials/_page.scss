@@ -37,8 +37,24 @@
 .form {
   @include elementSpace;
 
+  &__select-wrapper {
+    @include elementSpace;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__select-label {
+    margin-bottom: 0.5rem;
+  }
+
+  &__select {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
   &__btn {
-    padding: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
     color: $contrast;
     background-color: #fff;
     border: 2px solid black;
@@ -62,9 +78,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &__content {
-    font-size: 1rem;
-    font-weight: 800;
-  }
 }

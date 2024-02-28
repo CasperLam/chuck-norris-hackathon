@@ -3,7 +3,14 @@ button {
   font-family: Rye, serif;
 }
 
-h2,
-p {
+h2 {
   font-family: "Courier New", Courier, monospace;
+}
+
+p,
+label,
+select,
+.form__option {
+  @extend h2;
+  font-weight: 800;
 }

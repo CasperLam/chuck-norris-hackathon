@@ -12,9 +12,18 @@ button {
   font-family: Rye, serif;
 }
 
-h2,
-p {
+h2, p,
+label,
+select,
+.form__option {
   font-family: "Courier New", Courier, monospace;
+}
+
+p,
+label,
+select,
+.form__option {
+  font-weight: 800;
 }
 
 .main {
@@ -51,8 +60,21 @@ p {
 .form {
   margin-bottom: 1.5rem;
 }
+.form__select-wrapper {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.form__select-label {
+  margin-bottom: 0.5rem;
+}
+.form__select {
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .form__btn {
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
   color: #ca6f1e;
   background-color: #fff;
   border: 2px solid black;
@@ -74,8 +96,4 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.fact__content {
-  font-size: 1rem;
-  font-weight: 800;
 }/*# sourceMappingURL=index.css.map */
